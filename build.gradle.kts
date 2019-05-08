@@ -22,6 +22,8 @@ dependencies {
 
     testImplementation("junit:junit:4.12")
     testImplementation("org.scalatest:scalatest_$scalaMajor:3.0.5")
+    testImplementation("org.scalamock:scalamock-scalatest-support_2.12:3.5.0")
+    testRuntimeOnly("org.pegdown:pegdown:1.4.2")
     scoverage("org.scoverage:scalac-scoverage-plugin_2.12:1.3.1")
     scoverage("org.scoverage:scalac-scoverage-runtime_2.12:1.3.1")
 }
