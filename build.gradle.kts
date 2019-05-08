@@ -3,6 +3,7 @@ plugins {
     scala
     id("org.scoverage") version "3.0.0"
     id("com.github.maiflai.scalatest") version "0.21"
+    pmd
 }
 
 repositories {
