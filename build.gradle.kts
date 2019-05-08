@@ -8,8 +8,14 @@ plugins {
     checkstyle
 }
 
-repositories {
+findbugs {
+    isIgnoreFailures = true
+    reportLevel = "low"
+    effort = "max"
+}
+
     jcenter()
+    repositories {
 }
 
 val scalaMajor = "2.12"
