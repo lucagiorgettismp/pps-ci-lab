@@ -3,6 +3,8 @@ plugins {
     scala
     id("org.scoverage") version "3.0.0"
     id("com.github.maiflai.scalatest") version "0.21"
+    findbugs
+    pmd
     checkstyle
 }
 
@@ -34,7 +36,4 @@ java {
     targetCompatibility = JavaVersion.VERSION_1_8
 }
 
-checkstyle {
-    configFile = file("$rootDir/config/checkstyle/checkstyle.xml")
-}
 
